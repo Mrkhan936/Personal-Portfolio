@@ -1,0 +1,68 @@
+@media screen and (max-width: 1124px){
+    .leftmain{  
+        color: white;
+        width: 30%;
+        font-size: 1.9rem;
+    }
+    .image{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    main{
+        display: flex;
+        justify-content: space-around;
+        height: 500px;
+        background-color: rgb(30, 30, 63);
+        align-items: center;
+        
+    }
+    .leftmain{  
+        color: white;
+        width: 30%;
+        font-size: 1.5rem;
+    }
+    .image{
+        width: 250px;
+    }
+    .image2{
+        width: 250px;
+        border-radius: 100%;
+    }
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(30, 30, 63);
+        height: 650px;
+        color: white;
+        font-size: 1rem;
+    }
+    .image2{
+    
+        width: 250px;
+        border-radius: 100%;
+    }
+    .leftabout{
+       display: flex;
+       justify-content: center;
+       width: 30%;
+    }
+    .rightabout{
+      width: 50%;
+    }
+    .pimage{
+        width: 200px;
+        height: 200px;
+        /* margin: 23px; */
+    }
+    .project{
+        height: 500px;
+        background-color: rgb(30, 30, 63);
+        text-align: center;
+        color: white;
+    }
+    
+}
