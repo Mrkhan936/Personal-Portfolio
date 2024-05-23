@@ -2,8 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Encode Sans Expanded", sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     background-color: rgb(44, 43, 91);
