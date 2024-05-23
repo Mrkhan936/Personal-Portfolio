@@ -202,9 +202,9 @@ main{
     border-radius: 100%;
     margin: 15px;
 }
-.phone{
+/* .phone{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: center; 
     text-align: center;
-}
+} */
