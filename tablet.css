@@ -1,68 +1,93 @@
-@media screen and (max-width: 1124px){
-    .leftmain{  
-        color: white;
-        width: 30%;
-        font-size: 1.9rem;
-    }
-    .image{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    main{
-        display: flex;
-        justify-content: space-around;
-        height: 500px;
-        background-color: rgb(30, 30, 63);
-        align-items: center;
-        
-    }
-    .leftmain{  
-        color: white;
-        width: 30%;
-        font-size: 1.5rem;
-    }
-    .image{
-        width: 250px;
-    }
-    .image2{
-        width: 250px;
-        border-radius: 100%;
-    }
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
 
-    .about{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgb(30, 30, 63);
-        height: 650px;
-        color: white;
-        font-size: 1rem;
-    }
-    .image2{
-    
-        width: 250px;
-        border-radius: 100%;
-    }
-    .leftabout{
-       display: flex;
-       justify-content: center;
-       width: 30%;
-    }
-    .rightabout{
-      width: 50%;
-    }
-    .pimage{
-        width: 200px;
-        height: 200px;
-        /* margin: 23px; */
-    }
-    .project{
-        height: 500px;
-        background-color: rgb(30, 30, 63);
-        text-align: center;
-        color: white;
-    }
-    
+  ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  ul li {
+    margin: 8px 0;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .rightmain img {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .leftmain {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .image2 {
+    width: 250px;
+    margin: 20px auto;
+  }
+
+  .rightabout {
+    width: 80%;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .skill {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftskill,
+  .rightskill {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .project {
+    height: auto;
+    padding: 20px;
+  }
+
+  .pcontainer {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .ptitle {
+    width: 90%;
+  }
+
+  .contact {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .rightcontact,
+  .leftcontact {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .input {
+    width: 95%;
+  }
 }
