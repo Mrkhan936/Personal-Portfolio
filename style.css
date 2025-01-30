@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* box-sizing: border-box; */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -25,24 +24,14 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
-}
-header {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  padding: 15px 20px;
-  background-color: #222;
-  /* color: white; */
-  /* position: fixed; */
-  /* width: 100%; */
-  /* top: 0; */
   left: 0;
-  /* z-index: 1000; */
+  z-index: 1000;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
-
+header {
+  padding: 15px 20px;
+}
 ul {
   display: flex;
 }
@@ -78,6 +67,7 @@ main {
   padding: 14px;
   color: white;
   font-size: small;
+  display: inline-block;
 }
 
 .resume:hover {
@@ -172,7 +162,6 @@ main {
   background-color: rgb(30, 30, 63);
   text-align: center;
   color: white;
-  /* border: 2px solid black; */
 }
 
 .Pheading {
@@ -240,7 +229,6 @@ main {
   padding: 20px;
   border-radius: 100%;
   margin: 15px;
-  /* border: 2px solid yellow; */
 }
 /* Navbar Styling */
 
@@ -278,7 +266,6 @@ main {
   z-index: 1100;
   position: absolute;
   right: 20px;
-  /* Aligned to right */
   top: 50%;
   transform: translateY(-50%);
 }
@@ -358,94 +345,4 @@ main {
 
 .menu-toggle.active div:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-
-  * {
-    margin: 0px;
-    padding: 0px;
-    /* box-sizing: border-box; */
-    font-family: 'Poppins', sans-serif;
-  }
-  .right ul {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  main {
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 600px;
-    background-color: rgb(30, 30, 63);
-    align-items: center;
-    Padding-top: 90px;
-  }
-
-  .pcontainer {
-    display: inline-grid;
-    grid-template-columns: auto;
-    margin: 50px;
-    /* border: 2px solid yellow; */
-    /* padding: 30px ; */
-    /* width: 100%; */
-  }
-
-  .image {
-    width: 50%;
-  }
-
-  .rightmain {
-    display: flex;
-    width: 100%;
-    /* border: 2px solid yellow; */
-    align-items: center;
-    justify-content: center;
-  }
-  .leftmain {
-    color: white;
-    width: 100%;
-    font-size: large;
-    /* border: 2px solid yellow; */
-    padding-top: 43px;
-    text-align: center;
-    height: 50%;
-  }
-  .intro{
-    font-size: large;
-  }
-  .leftabout {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* border: 2px solid yellow; */
-    height: 30%;
-  }
-  .rightabout {
-    width: 100%;
-    /* border: 2px solid yellow; */
-    height: 40%;
-  }
-  .about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(30, 30, 63);
-    height: 550px;
-    color: white;
-    font-size: 1rem;
-  }
 }

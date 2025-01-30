@@ -1,0 +1,89 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .right ul {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+  
+    main {
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      height: 600px;
+      background-color: rgb(30, 30, 63);
+      align-items: center;
+      Padding-top: 90px;
+    }
+  
+    .pcontainer {
+      display: inline-grid;
+      grid-template-columns: auto;
+      margin: 50px;
+    }
+  
+    .image {
+      width: 50%;
+    }
+  
+    .rightmain {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .leftmain {
+      color: white;
+      width: 100%;
+      font-size: large;
+      padding-top: 43px;
+      text-align: center;
+      height: 50%;
+    }
+    .intro{
+      font-size: large;
+    }
+    .leftabout {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 30%;
+    }
+    .rightabout {
+      width: 100%;
+      height: 40%;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(30, 30, 63);
+      height: 550px;
+      color: white;
+      font-size: 1rem;
+    }
+    .resume {
+        background-color: rgb(55, 118, 202);
+        border-radius: 5px;
+        padding: 14px;
+        color: black;
+        font-size: small;
+        margin: 45px;
+    }
+  }
