@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,23 +15,47 @@
 </head>
 
 <body>
-  <header>
-    <div class="left">
-      My portfolio
+
+
+
+
+<header>
+    <div class="left">My Portfolio</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
     <div class="right">
-      <ul>
-        <li><a href="#home">Home </a></li>
-        <li><a href="#About">About </a></li>
-        <li><a href="#skill">Skills </a></li>
-        <li><a href="#myproject">Project </a></li>
-        <li><a href="#contactus">Contact </a></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#myproject">Projects</a></li>
+            <li><a href="#contactus">Contact</a></li>
+        </ul>
     </div>
-  </header>
+</header>
+
+<!-- Full-Screen Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>  <!-- Close Button -->
+    <ul>
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#About" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#myproject" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contactus" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</div>
+
+
+
+
+
   <main id="home">
     <div class="leftmain">
-      <h2>Hi , My name is <br><span style="color: rgb(31, 104, 200);">Aman</span></h2>
+      <h2 class="intro">Hi , My name is <br><span style="color: rgb(31, 104, 200);">Aman</span></h2>
       I am a Passionate <br>
       <span id="element"></span><br>
       <a href="https://drive.google.com/uc?export=download&id=1nc2KbDZg1LkaKTiVIQHc4MwCcg2lqzNW" class="resume"
@@ -151,13 +174,12 @@
       <h1 style="text-align: center; margin: 20px;">Contact <span style="color: rgb(31, 104, 200);">Me</span> </h1>
       <p> <b>Let's work together</b> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veniam id
         debitis reiciendis ipsa dolores ratione labore cumque? Fugit voluptatem error sit corrupti a. Dicta!</p>
-      <div>
-        <a href="mailto:mrkhan9368@gamil.com" target="_blank"><img class="logo" src="envelope.svg" alt="Not found"></a>
-        <a href="tel:+91 9368070856" target="_blank"> <img class="logo" src="telephone.svg" alt="Not found"></a>
-        <a href="https://github.com/Mrkhan936" target="_blank"><img class="logo" src="github.svg" alt="Not found"></a>
-        <a href="http://www.linkedin.com/in/aman-khan-0a63b71aa" target="_blank"><img class="logo" src="linkedin.svg"
-            alt="Not found"></a>
-      </div>
+        <div>
+          <a href="mailto:mrkhan9368@gamil.com" target="_blank"><img class="logo" src="envelope.svg" alt="Not found"></a>
+          <a href="tel:+91 9368070856" target="_blank"> <img class="logo" src="telephone.svg" alt="Not found"></a>
+          <a href="https://github.com/Mrkhan936" target="_blank"><img class="logo" src="github.svg" alt="Not found"></a>
+          <a href="http://www.linkedin.com/in/aman-khan-0a63b71aa" target="_blank"><img class="logo" src="linkedin.svg"alt="Not found"></a>
+        </div>
     </div>
     <div class="leftcontact">
       <input class="input" type="text" placeholder="Enter your Name"><br>
@@ -173,7 +195,10 @@
       strings: ['Web Developer', 'Graphic Designer'],
       typeSpeed: 50,
     });
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('active');
+        document.querySelector('.menu-toggle').classList.toggle('active');
+    }
   </script>
 </body>
-
 </html>
